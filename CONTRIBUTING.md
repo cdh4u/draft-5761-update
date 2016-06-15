@@ -1,24 +1,4 @@
-# Updates to RFC 4572
-
-This is the working area for the Individual internet-draft, "Updates to RFC 4572".
-
-* [Editor's copy](https://cdh4u.github.io/draft-5761-update/)
-* [Individual Draft] (https://tools.ietf.org/html/draft-holmberg-avtcore-5761-update)
-
-
-## Building the Draft
-
-Formatted text and HTML versions of the draft can be built using `make`.
-
-```sh
-$ make
-```
-
-This requires that you have the necessary software installed.  See [the
-instructions](https://github.com/martinthomson/i-d-template/blob/master/doc/SETUP.md).
-
-
-## Contributing
+# Contributing
 
 Before submitting feedback, please familiarize yourself with our current issues
 list and review the [working group
