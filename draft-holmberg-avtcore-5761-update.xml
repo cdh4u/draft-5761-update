@@ -4,7 +4,7 @@
 <?rfc toc="yes" ?>
 <?rfc compact="yes" ?>
 <?rfc sortrefs="no" ?>
-<rfc ipr="trust200902" category="std" docName="draft-holmberg-avtcore-5761-update-latest" updates="5761" submissionType="IETF" xml:lang="en">
+<rfc ipr="pre5378Trust200902" category="std" docName="draft-holmberg-avtcore-5761-update-latest" updates="5761" submissionType="IETF" xml:lang="en">
   <front>
     <title>Updates to RFC 4572</title>
     <author fullname="Christer Holmberg" initials="C.H." surname="Holmberg">
@@ -64,9 +64,12 @@
 
     <section title="Update to RFC 5761">
         <t>
-            This section updates section 5.1.1 of RFC 5761.
+            This section updates section 5.1.1 of RFC 5761, by clarifying that
+            an answerer can only include an "a=rtcp-mux" attribute in an answer
+            if the associated offer contained the attribute. The update also
+            clarifies that the negotiation of RTP and RTCP multiplexing is for
+            usage in both directions.
         </t>
-        <section title="Update to the sixth paragraph of section 5">
             <figure>
                 <artwork align="left" alt="" height="" name="" type="" width="" xml:space="preserve"><![CDATA[
 
@@ -143,7 +146,7 @@ NEW TEXT:
  types used in the answer MUST conform to the rules in Section 4. If
  the offer does not contain the "a=rtcp-mux" attribute the answerer
  MUST NOT include an attribute in the answer, and the answerer MUST NOT
-multiplex RTP and RTCP packets on a single port.
+ multiplex RTP and RTCP packets on a single port.
 
  If the answerer includes an "a=rtcp-mux" attribute in the answer, the
  offerer and answerer MUST multiplex RTP and RTCP packets on a single
@@ -165,8 +168,6 @@ multiplex RTP and RTCP packets on a single port.
 
                 ]]></artwork>
             </figure>
-
-        </section>
 	</section>
 
 	<section title="Security Considerations">
